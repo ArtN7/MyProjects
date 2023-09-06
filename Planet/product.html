@@ -16,20 +16,22 @@
 </head>
 
 <body>
-  <header class="page-header page-header-product">
+  <header class="page-header page-header-index">
     <nav class="page-header-nav">
-      <a href="index.html" class="logo-group">
-        <p>Digital Planet</p>
-      </a>
+      <p class="logo">
+        <a href="index.html">Digital Planet</a>
+      </p>
       <ul class="nav-images">
-        <li class="nav-image nav-image-product"><a href="product.html">О ПРОДУКТЕ</a></li>
+        <li class="nav-image"><a href="product.html">О ПРОДУКТЕ</a></li>
         <li class="nav-image"><a href="explanation.html">КАК РАБОТАЕТ</a></li>
         <li class="nav-image"><a href="technology.html">ТЕХНОЛОГИЯ</a></li>
         <li class="nav-image"><a href="questions.html">ВОПРОСЫ</a></li>
         <li class="nav-image"><a href="contacts.html">КОНТАКТЫ</a></li>
       </ul>
-      <button type="submit" class="button-order">ЗАКАЗАТЬ</button>
-      <a href="tel:+88005553575" class="page-header-tel">8 (800) 555 35 75</a>
+      <div class = "order">
+        <button type="submit" class="button-order">ЗАКАЗАТЬ</button>
+        <a href="tel:+88005553575" class="order-page-header-tel">8 (800) 555 35 75</a>
+      </div>
     </nav>
   </header>
 
@@ -74,5 +76,20 @@
         <img src="img/down-scroll.svg" width="15" height="7" alt="down-scroll">
       </a>
     </div>
+    </footer>
+
+    <div class = "popup popup-display-none">
+      <form class = "popup-form">
+        <button type="button" class = "popup-button-close"><img src = "img/+.svg"></button>
+        <h4 class = "popup-header">Закажите VR планетарий</h2>
+        <p class = "popup-p">Оставьте ваши контактные данные, мы обработаем заявку в течении двух рабочих дней и перезвоним вам.</p>
+        <div class = "popup-inputs">
+          <input type="text" placeholder="Ваше имя" class = "popup-input-name">
+          <input type="text" placeholder="Ваш телефон" class = "popup-input-phone">
+        </div>
+        <button type="submit" class = "popup-button-send"><p>Отправить</p></button>
+      </form>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>

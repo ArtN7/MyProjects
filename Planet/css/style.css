@@ -27,6 +27,7 @@ body {
                 url("../img/blue-moon.png") 50% 40% no-repeat fixed;
     background-size: 430px 350px, cover;
 }
+
 header {
     width: 100%;
     max-width: 1366px;
@@ -285,37 +286,35 @@ header {
     margin-bottom: 5px;
 }
 
-.what-is-planet h1 {
-    width: 591px;
-    margin-left: 90px;
-    margin-bottom: 57px;
-    font-weight: 500;
-    font-size: 44px;
-    line-height: 51px;
-    text-decoration: underline;
-    text-decoration-color: #0DD1A2;
-    text-decoration-thickness: 3px;
-    text-underline-position: under;
-    text-underline-offset: 4px;
-}
-
 .popup-display-none {
     display: none;
 }
+/* Разобрать */
 .popup-is-work {
-    opacity: 0.9;
-    background: #1C1C1C;
+    position: relative;
 }
-.popup{
-    width: 560px;
-    height: 380px;
+.popup-is-work::after {
+    content: "";
+    opacity: 0.9;
+    background-color: #1C1C1C;
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popup{
+    position: absolute;
+    margin: 194px 403px;
+    z-index: 2;
 }
 
 .popup-form {
+    width: 560px;
+    height: 380px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     border-radius: 3px;
     background-color: #F3F3F3;
 }
@@ -377,7 +376,10 @@ header {
     height: 34px;
     border-radius: 2px;
     border: 2px solid #0DD1A2;
+    display: flex;
     align-self: center;
+    justify-content: center;
+    align-items: center;
     color: #1C1C1C;
     margin-top: 39px;
 }
@@ -391,11 +393,33 @@ header {
     opacity: 1;
 }
 
+.what-is-planet {
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    width: 591px;
+    position: absolute;
+    left: 90px;
+    top: 150px;
+}
+
+.what-is-planet h1 {
+    margin-bottom: 57px;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 51px;
+    text-decoration: underline;
+    text-decoration-color: #0DD1A2;
+    text-decoration-thickness: 3px;
+    text-underline-position: under;
+    text-underline-offset: 4px;
+
+}
 .info-product {
     width: 440px;
     height: 281px;
     margin-top: 0;
-    margin-left: 120px;
+    margin-left: 30px;
     font-weight: 300;
     font-size: 17px;
     line-height: 150%;
@@ -410,8 +434,8 @@ header {
     position: absolute;
     width: 737px;
     height: 363px;
-    left: 536px;
-    top: 355px;
+    bottom: 50px;
+    right: 108.18px;
     text-align: end;
 }
 
