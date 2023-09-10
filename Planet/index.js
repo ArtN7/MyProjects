@@ -1,6 +1,7 @@
 const popup = document.querySelector('.popup');
 const buttonClose = popup.querySelector('.popup-button-close');
 const buttonOrder = document.querySelectorAll('.button-order');
+const buttonSend = document.querySelector('.popup-button-send');
 const body = document.querySelector('body');
 
 for (const button of buttonOrder) {
