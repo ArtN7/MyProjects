@@ -393,6 +393,68 @@ header {
     opacity: 1;
 }
 
+.popup-confirmation {
+    position: absolute;
+    margin: 215px 403px;
+    width: 560px;
+    height: 338px;
+    display: flex;
+    flex-direction: column;
+    background-color: #F3F3F3;
+    border-radius: 3px;
+    background: #F3F3F3;
+    color: black;
+    align-items: center;
+}
+.circle-done-svg {
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+.popup-confirmation h4 {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.popup-confirmation span {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+    opacity: 0.64;
+    width: 400px;
+    margin-top: 0;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.popup-button-close {
+    align-self: flex-end;
+    width: 48px;
+    height: 48px;
+    border: none;
+    background-color: #F3F3F3;
+    border-radius: 3px;
+    position: absolute ;
+}
+.button-ok {
+    width: 96px;
+    height: 34px;
+    border-radius: 2px;
+    border: 2px solid#0DD1A2;
+    color:  #1C1C1C;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    opacity: 0.4;
+}
+.button-ok:hover {
+    opacity: 1;
+}
 .page-main-product {
     width: 100%;
     max-width: 1366px;
