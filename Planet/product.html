@@ -80,7 +80,7 @@
     </div>
     </footer>
 
-    <div class = "popup popup-display-none">
+    <div class = "popup-order popup-display-none">
       <form class = "popup-form">
         <button type="button" class = "popup-button-close"><img src = "img/+.svg"></button>
         <h4 class = "popup-header">Закажите VR планетарий</h2>
@@ -89,8 +89,20 @@
           <input type="text" placeholder="Ваше имя" class = "popup-input-name">
           <input type="text" placeholder="Ваш телефон" class = "popup-input-phone">
         </div>
-        <button type="submit" class = "popup-button-send"><p>Отправить</p></button>
+        <input type="submit" class = "popup-submit" value="Отправить">
       </form>
+    </div>
+    <div class = "popup-confirmation-order popup-confirmation">
+      <button type="button" class="popup-button-close">
+        <img src = "img/+.svg">
+      </button>
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60" fill="none" class = "circle-done-svg">
+        <circle opacity="0.1" cx="30" cy="30" r="28" stroke="#1C1C1C" stroke-width="4"/>
+        <path d="M15 27.0769L29.6546 44L60 9" stroke="#1DC04B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h4>Сообщение успешно отправлено!</h4>
+      <span>Мы обязательно свяжемся с вами в ближайшее время и подробно ответим на ваш вопрос, будьте на связи!</span>
+      <button type="button" class="button-ok">OK</button>
     </div>
     <script src="index.js"></script>
 </body>

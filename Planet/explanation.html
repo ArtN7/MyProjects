@@ -8,6 +8,11 @@
   <meta name="description" content="Сайт образовательного виртуального планетария Digital Planet VR">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
@@ -43,8 +48,9 @@
         <div class = "about-item">
           <h4>Готовим инвентарь</h4>
           <div class = "item-text-content">Наши специалисты готовят каждые
-            VR-очки к использованию, обрабатывая устройства специальным 
-            средством для ухода после каждого сеанса.</div>
+            <br>VR-очки к использованию, обрабатывая<br>устройства специальным средством
+             <br>для ухода после каждого сеанса.
+          </div>
         </div>
       </div>
       <div class = "description-work-item">
@@ -54,11 +60,15 @@
         </div>
         <div class = "about-item">
           <h4>Выбираем фильм</h4>
-          <div class = "item-text-content">В нашем архиве есть образовательные фильмы 
-            по теме космоса, астрологиии обществознания.
-            Мы работаем с самым крупным производителем мультимедиа продуктов в РФ.</div>
+          <div class = "item-text-content">В нашем архиве есть образовательные<br>фильмы 
+            по теме космоса, астрологии<br>и обществознания. Мы работаем с самым<br>крупным 
+            производителем мультимедиа <br>продуктов в РФ.
+          </div>
         </div>
       </div>
+      <svg xmlns="http://www.w3.org/2000/svg" width="247" height="47" viewBox="0 0 247 47" fill="none" class = "top-stroke">
+        <path opacity="0.37" d="M246 41.1739C112.088 66.9842 156.11 -22.8591 1 7" stroke="#E6E6E6" stroke-width="1.5" stroke-dasharray="9 4"/>
+      </svg>
       <div class = "description-work-item">
         <span class="number-work-item">3</span>
         <div class = "description-work-item-img">
@@ -66,21 +76,24 @@
         </div>
         <div class = "about-item">
           <h4>Надеваем VR-очки</h4>
-          <div class = "item-text-content">Ученики получают VR-очки, наш техник 
-            помогает им разобраться как правильно надеть очки и закрепить их на голове. 
-            Для ребят со зрением, отличным от 100%, техник настраивает диоптрии.</div>
+          <div class = "item-text-content">Ученики получают VR-очки, наш техник<br>помогает им 
+            разобраться как правильно<br>надеть очки и закрепить их на голове. 
+            <br>Для ребят со зрением, отличным от 100%, техник настраивает диоптрии.
+          </div>
         </div>
       </div>
       <div class = "description-work-item">
         <span class="number-work-item">4</span>
-        <div class = "description-work-item-img">
+        <div class = "description-work-item-img"> 
           <img src ="img/boy-vr-glass1.jpg" width="195" height="130">
         </div>
         <div class = "about-item">
           <h4>Исследуем галактики!</h4>
           <div class = "item-text-content">Ребята окунаются в виртуальные миры
-            и с удовольтсием изучают всё вокруг. После показа остаются яркие эмоции
-            и запоминаются важные моменты о планетах, звёздах и галактике.</div>
+            <br>и с удовольтсием изучают всё вокруг. 
+            <br>После показа остаются яркие эмоции
+            <br>и запоминаются важные моменты <br>о планетах, звёздах и галактике.
+          </div>
         </div>
       </div>
 
@@ -95,7 +108,7 @@
     </div>
     </footer>
 
-    <div class = "popup popup-display-none">
+    <div class = "popup-order popup-display-none">
       <form class = "popup-form">
         <button type="button" class = "popup-button-close"><img src = "img/+.svg"></button>
         <h4 class = "popup-header">Закажите VR планетарий</h2>
@@ -104,8 +117,20 @@
           <input type="text" placeholder="Ваше имя" class = "popup-input-name">
           <input type="text" placeholder="Ваш телефон" class = "popup-input-phone">
         </div>
-        <button type="submit" class = "popup-button-send"><p>Отправить</p></button>
+        <input type="submit" class = "popup-submit" value="Отправить">
       </form>
+    </div>
+    <div class = "popup-confirmation-order popup-confirmation">
+      <button type="button" class="popup-button-close">
+        <img src = "img/+.svg">
+      </button>
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60" fill="none" class = "circle-done-svg">
+        <circle opacity="0.1" cx="30" cy="30" r="28" stroke="#1C1C1C" stroke-width="4"/>
+        <path d="M15 27.0769L29.6546 44L60 9" stroke="#1DC04B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h4>Сообщение успешно отправлено!</h4>
+      <span>Мы обязательно свяжемся с вами в ближайшее время и подробно ответим на ваш вопрос, будьте на связи!</span>
+      <button type="button" class="button-ok">OK</button>
     </div>
     <script src="index.js"></script>
 </body>

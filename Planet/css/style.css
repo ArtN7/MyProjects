@@ -289,7 +289,6 @@ header {
 .popup-display-none {
     display: none;
 }
-/* Разобрать */
 .popup-is-work {
     position: relative;
 }
@@ -304,7 +303,7 @@ header {
     height: 100%;
 }
 
-.popup{
+.popup-order{
     position: absolute;
     margin: 194px 403px;
     z-index: 2;
@@ -371,7 +370,7 @@ header {
     margin-top: 13px;
     margin-bottom: 0;
 }
-.popup-button-send {
+.popup-submit {
     width: 125px;
     height: 34px;
     border-radius: 2px;
@@ -382,14 +381,12 @@ header {
     align-items: center;
     color: #1C1C1C;
     margin-top: 39px;
-}
-.popup-button-send p{
     font-size: 14px;
     font-weight: 700;
     letter-spacing: 0.42px;
     opacity: 0.4;
 }
-.popup-button-send p:hover {
+.popup-submit:hover {
     opacity: 1;
 }
 
@@ -405,10 +402,14 @@ header {
     background: #F3F3F3;
     color: black;
     align-items: center;
+    z-index: 2;
 }
 .circle-done-svg {
     margin-top: 60px;
     margin-bottom: 20px;
+}
+.popup-confirmation-order {
+    display: none;
 }
 .popup-confirmation h4 {
     font-size: 21px;
@@ -612,16 +613,18 @@ header {
     margin-top: 0;
     display: flex;
     flex-wrap: wrap;
-    width: 1178px;
-    height: 387px;
+    width: 1218px;
+    height: 429px;
 }
 .description-work-item {
+    z-index: 0;
     position: relative;
-    width: 470px;
-    height: 142px;
+    width: 527px;
+    height: 157px;
     display: flex;
     justify-content: space-between;
     margin-left: 30px;
+    padding-top: 12px;
 }
 .description-work-item-img {
     margin-right: 32px;
@@ -635,7 +638,7 @@ header {
     position: absolute;
     border: 2px solid #0DD1A2;
     left: 12px;
-    bottom: 21px;
+    top: 0;
 }
 .number-work-item {
     position: absolute;
@@ -666,7 +669,28 @@ header {
     width: 300px;
     margin-top: 0px;
     font-size: 15px;
-    font-weight: 300;
     font-style: normal;
+    font-weight: 300;
     line-height: 130%;
+}
+
+.description-work-item:nth-child(1) {
+    margin-right: 0;
+}
+.description-work-item:nth-child(2) {
+    margin-bottom: 72px;
+    margin-left: 66px;
+}
+.description-work-item:nth-child(3) {
+    margin-top: 17px;
+}
+.description-work-item:nth-child(4) {
+
+    margin-right: 86px;
+}
+.top-stroke {
+    position: absolute;
+    left: 478px;
+    top: 235px;
+    z-index: -1;
 }
