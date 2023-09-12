@@ -618,7 +618,7 @@ header {
     margin-top: 0;
     margin-bottom: 6px;
 }
-.border-for-question {
+.border-for-question-explanation {
     width: 415px;
     border-bottom:3px solid #0DD1A2;
     margin-bottom: 46px;
@@ -640,8 +640,6 @@ header {
     width: 527px;
     height: min-content;
 }
-
-
 
 .description-work-item-img {
     margin-right: 32px;
@@ -691,8 +689,6 @@ header {
     line-height: 130%;
 }
 
-
-
 .description-work-item:nth-child(1) {
     height:155px;
     margin: 0 66px 60px 30px;
@@ -723,3 +719,69 @@ header {
     right: 310px;
     z-index: -1;
 }
+
+.page-header-technology {
+    margin-bottom: 76px;
+}
+.technology-title {
+    font-size: 44px;
+    font-weight: 500;
+    line-height: normal;
+    font-style: normal;
+    margin-top: 0;
+    margin-bottom: 3px;
+}
+.border-for-technology-title {
+    width: 343px;
+    border-bottom:3px solid #0DD1A2;
+    margin-top: 0;
+    margin-bottom: 73px;
+}
+.info-detail-technology-items {
+    width: 1142px;
+    height: min-content;
+    padding-left: 28px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 554px;
+    grid-row-gap: 80px;
+
+}
+.info-detail-technology-item {
+    height: min-content;
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info-detail-technology-title {
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 132.135%;
+    margin-bottom: 10px;
+}
+.info-detail-technology-title:nth-child(2) {
+    line-height: normal;
+}
+.info-detail-technology-text-content {
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 130%;
+    margin-top: 0;
+}
+.images-helmet {
+    border: 1px solid red;
+    position: absolute;
+    top: 50%;
+    right: 35%;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    width: 408px;
+    height: 408px;
+    border-radius: 408px;
+    background: #FFF;
+}
+
