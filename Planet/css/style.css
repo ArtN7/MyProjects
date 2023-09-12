@@ -598,34 +598,48 @@ header {
     justify-content: center;
     align-self: center;
 }
-
+.page-header-explanation {
+    margin-bottom: 76px;
+}
+.page-main-explanation {
+    width: 1200px;
+    height: 535px;
+    margin-top: 0;
+}
+.question-explanation {
+    height: 51px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 44px;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
 .border-for-question {
     width: 415px;
     border-bottom:3px solid #0DD1A2;
-    margin-top: 0;
     margin-bottom: 46px;
 }
-.question-explanation {
-    font-weight: 500;
-    font-size: 44px;
-}
 .description-work-items {
+    width: 100%;
+    height: 429px;
     margin-top: 0;
     display: flex;
     flex-wrap: wrap;
-    width: 1218px;
-    height: 429px;
 }
+
 .description-work-item {
     z-index: 0;
     position: relative;
-    width: 527px;
-    height: 157px;
     display: flex;
     justify-content: space-between;
-    margin-left: 30px;
     padding-top: 12px;
+    width: 527px;
+    height: min-content;
 }
+
+
+
 .description-work-item-img {
     margin-right: 32px;
     z-index: -1;
@@ -674,23 +688,35 @@ header {
     line-height: 130%;
 }
 
-.description-work-item:nth-child(1) {
-    margin-right: 0;
-}
-.description-work-item:nth-child(2) {
-    margin-bottom: 72px;
-    margin-left: 66px;
-}
-.description-work-item:nth-child(3) {
-    margin-top: 17px;
-}
-.description-work-item:nth-child(4) {
 
+
+.description-work-item:nth-child(1) {
+    height:155px;
+    margin: 0 66px 60px 30px;
+}
+.description-work-item:nth-of-type(3) {
+    margin-left: 60px;
     margin-right: 86px;
 }
+.description-work-item:nth-of-type(4) {
+    margin-top:17px;
+}
+
 .top-stroke {
-    position: absolute;
-    left: 478px;
-    top: 235px;
+    position: relative;
+    bottom: 400px;
+    left: 368px;
+    z-index: -1;
+}
+.middle-stroke {
+    position: relative;
+    bottom: 255px;
+    right:95px;
+    z-index: -1;
+}
+.end-stroke {
+    position: relative;
+    bottom: 150px;
+    right: 310px;
     z-index: -1;
 }
