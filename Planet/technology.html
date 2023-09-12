@@ -8,31 +8,68 @@
   <meta name="description" content="Сайт образовательного виртуального планетария Digital Planet VR">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <header class="page-header page-header-product">
+  <header class="page-header page-header-technology">
     <nav class="page-header-nav">
-      <a href="index.html" class="logo-group">
-        <p>Digital Planet</p>
-      </a>
+      <p class="logo">
+        <a href="index.html">Digital Planet</a>
+      </p>
       <ul class="nav-images">
-        <li class="nav-image nav-image-product"><a href="product.html">О ПРОДУКТЕ</a></li>
+        <li class="nav-image"><a href="product.html">О ПРОДУКТЕ</a></li>
         <li class="nav-image"><a href="explanation.html">КАК РАБОТАЕТ</a></li>
-        <li class="nav-image"><a href="technology.html">ТЕХНОЛОГИЯ</a></li>
+        <li class="nav-image active"><a href="technology.html">ТЕХНОЛОГИЯ</a></li>
         <li class="nav-image"><a href="questions.html">ВОПРОСЫ</a></li>
         <li class="nav-image"><a href="contacts.html">КОНТАКТЫ</a></li>
       </ul>
-      <button type="submit" class="button-order">ЗАКАЗАТЬ</button>
-      <a href="tel:+88005553575" class="page-header-tel">8 (800) 555 35 75</a>
+      <div class = "order">
+        <button type="submit" class="button-order">ЗАКАЗАТЬ</button>
+        <a href="tel:+88005553575" class="order-page-header-tel">8 (800) 555 35 75</a>
+      </div>
     </nav>
   </header>
 
-  <main class="page-main">
+  <main class="page-main page-main-technology">
   </main>
 
   <footer class="page-footer">
-  </footer>
-</body>
+    <div class="scroll-down">
+      <a href="questions.html">
+        <img src="img/down-scroll.svg" width="15" height="7" alt="down-scroll">
+      </a>
+    </div>
+    </footer>
 
+    <div class = "popup-order popup-display-none">
+      <form class = "popup-form">
+        <button type="button" class = "popup-button-close"><img src = "img/+.svg"></button>
+        <h4 class = "popup-header">Закажите VR планетарий</h2>
+        <p class = "popup-p">Оставьте ваши контактные данные, мы обработаем заявку в течении двух рабочих дней и перезвоним вам.</p>
+        <div class = "popup-inputs">
+          <input type="text" placeholder="Ваше имя" class = "popup-input-name">
+          <input type="text" placeholder="Ваш телефон" class = "popup-input-phone">
+        </div>
+        <input type="submit" class = "popup-submit" value="Отправить">
+      </form>
+    </div>
+    <div class = "popup-confirmation-order popup-confirmation">
+      <button type="button" class="popup-button-close">
+        <img src = "img/+.svg">
+      </button>
+      <svg xmlns="http://www.w3.org/2000/svg" width="64" height="60" viewBox="0 0 64 60" fill="none" class = "circle-done-svg">
+        <circle opacity="0.1" cx="30" cy="30" r="28" stroke="#1C1C1C" stroke-width="4"/>
+        <path d="M15 27.0769L29.6546 44L60 9" stroke="#1DC04B" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h4>Сообщение успешно отправлено!</h4>
+      <span>Мы обязательно свяжемся с вами в ближайшее время и подробно ответим на ваш вопрос, будьте на связи!</span>
+      <button type="button" class="button-ok">OK</button>
+    </div>
+    <script src="index.js"></script>
+</body>
 </html>

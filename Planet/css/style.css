@@ -101,6 +101,9 @@ header {
     text-decoration: none;
     align-self: center;
 }
+.active a {
+    color: #0DD1A2;
+}
 
 .nav-image{
     position: relative;
