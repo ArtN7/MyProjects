@@ -723,6 +723,10 @@ header {
 .page-header-technology {
     margin-bottom: 76px;
 }
+.page-main-technology {
+    height: 570px;
+    border: 1px solid red;
+}
 .technology-title {
     font-size: 44px;
     font-weight: 500;
@@ -744,7 +748,7 @@ header {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 554px;
-    grid-row-gap: 80px;
+    grid-row-gap: 60px;
 
 }
 .info-detail-technology-item {
@@ -760,6 +764,7 @@ header {
     font-weight: 700;
     line-height: 132.135%;
     margin-bottom: 10px;
+    margin-top: 0;
 }
 .info-detail-technology-title:nth-child(2) {
     line-height: normal;
@@ -770,18 +775,66 @@ header {
     font-weight: 300;
     line-height: 130%;
     margin-top: 0;
+    margin-bottom: 0;
 }
-.images-helmet {
-    border: 1px solid red;
-    position: absolute;
-    top: 50%;
-    right: 35%;
+.collection-images-for-helmet {
+    width: 480px;
+    height: 480px;
+    position: relative;
+    bottom: 450px;
+    left: 320px;
     display: flex;
     justify-content: center;
-    align-self: center;
+    align-items: center;
+    border-radius: 480px;
+    border: 1px solid rgba(189,183,183,0.34);
+}
+.images-helmet {
     width: 408px;
     height: 408px;
     border-radius: 408px;
     background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.VR-helmet {
+    position: absolute;
+    left: 50px;
+    top: 130px;
+}
+.glass {
+    position: absolute;
+    bottom: 35px;
+    right: 65px;
+}
+.pointer-1, .pointer-2, .pointer-3, .pointer-4 {
+    position: relative;
+    margin: 0;
+}
+.pointer-1 {
+    bottom: 878px;
+    left: 240px;
+}
+.pointer-2 {
+    bottom: 893px;
+    left: 425px;
+}
+.pointer-3 {
+    display: flex;
+    bottom: 815px;
+    left: 194px;
+}
+.pointer-3-ellipse {
+    position: relative;
+    bottom: 5px;
+    left: 407px;
 }
 
+.pointer-4 {
+    bottom:  905px;
+    left: 730px;
+}
+.pointers {
+    border: 1px solid red;
+}
