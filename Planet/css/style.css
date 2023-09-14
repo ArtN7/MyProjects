@@ -725,7 +725,6 @@ header {
 }
 .page-main-technology {
     height: 570px;
-    border: 1px solid red;
 }
 .technology-title {
     font-size: 44px;
@@ -742,21 +741,28 @@ header {
     margin-bottom: 73px;
 }
 .info-detail-technology-items {
+    margin-top: 0;
     width: 1142px;
-    height: min-content;
+    height: 390px;
     padding-left: 28px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 554px;
-    grid-row-gap: 60px;
 
 }
 .info-detail-technology-item {
-    height: min-content;
+    margin-top: 0;
     width: 280px;
+    height: min-content;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.info-detail-technology-item:nth-child(1) {
+    margin-bottom: 80px;
+}
+.info-detail-technology-item:nth-child(4) {
+    margin-top: 20px;
 }
 .info-detail-technology-title {
     font-size: 21px;
@@ -781,7 +787,7 @@ header {
     width: 480px;
     height: 480px;
     position: relative;
-    bottom: 450px;
+    bottom: 425px;
     left: 320px;
     display: flex;
     justify-content: center;
@@ -805,25 +811,23 @@ header {
 }
 .glass {
     position: absolute;
-    bottom: 35px;
-    right: 65px;
+    bottom: 52px;
+    right: 48px;
 }
 .pointer-1, .pointer-2, .pointer-3, .pointer-4 {
-    position: relative;
+    position: absolute;
     margin: 0;
 }
 .pointer-1 {
-    bottom: 878px;
-    left: 240px;
+    left: 211px;
 }
 .pointer-2 {
-    bottom: 893px;
-    left: 425px;
+    left:577px
 }
 .pointer-3 {
     display: flex;
-    bottom: 815px;
-    left: 194px;
+    left: 167px;
+    top: 161.5px
 }
 .pointer-3-ellipse {
     position: relative;
@@ -832,9 +836,13 @@ header {
 }
 
 .pointer-4 {
-    bottom:  905px;
-    left: 730px;
+    left: 699px;
+    top: 166.5px;
 }
 .pointers {
-    border: 1px solid red;
+    position: relative;
+    bottom:858px;
+    height: 390px;
+    width: 1114px;
+    margin-left: 28px;
 }
