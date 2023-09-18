@@ -40,7 +40,7 @@ header {
     margin-bottom: 153px;
 }
 
-.page-header-product {
+.page-header-product, .page-header-questions, .page-header-technology, .page-header-explanation {
     margin-bottom: 76px;
 }
 
@@ -472,7 +472,7 @@ header {
     margin-left: 90px;
 }
 
-.main-question {
+.main-question-product {
     margin-top: 0;
     margin-bottom: 54px;
     width: 591px;
@@ -601,9 +601,7 @@ header {
     justify-content: center;
     align-self: center;
 }
-.page-header-explanation {
-    margin-bottom: 76px;
-}
+
 .page-main-explanation {
     width: 1200px;
     height: 535px;
@@ -720,9 +718,6 @@ header {
     z-index: -1;
 }
 
-.page-header-technology {
-    margin-bottom: 76px;
-}
 .about-technology {
     height: 580px;
 }
@@ -847,4 +842,77 @@ header {
     height: 390px;
     width: 1114px;
     margin-left: 28px;
+}
+
+/* .page-main-questions {
+   
+} */
+.title-for-questions {
+    margin-top: 0;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 5px;
+}
+.border-for-title-questions {
+    width: 616px;
+    border-bottom:3px solid #0DD1A2;
+    margin-bottom: 32px;
+}
+.main-questions {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
+}
+.main-question {
+    width: 904px;
+    min-height: 72px;
+    opacity: 0.95;
+    background: #FFF;
+    color: #1C1C1C;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 132.135%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.main-question-answer {
+    color: #1C1C1C;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%;
+    width: 640px;
+}
+.question-hidden {
+    display: none;
+}
+.main-question-static-info {
+    width: inherit;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+.button-open-answer {
+    transform: rotate(45deg);
+}
+.main-question-button-more-info {
+    width: 72px;
+    height: 72px;
+    background: #15B28D;
+    border: none;
+}
+.main-question-button-plus {
+    color: #FFF;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 132.135%;
 }

@@ -27,3 +27,20 @@ buttonOK.addEventListener('click', () => {
     popupConfirmation.classList.add('popup-confirmation-order');
     body.classList.remove('popup-is-work');
 })
+
+
+const buttonsMoreInfo = document.querySelectorAll('.main-question-button-more-info');
+const answer = document.querySelectorAll('.main-question-answer');
+for (let i = 0; i < buttonsMoreInfo.length; i += 1) {
+    // const buttonPlus = buttonsMoreInfo[i].querySelector('.main-question-button-plus');
+    buttonsMoreInfo[i].addEventListener('click', () => {
+        if (answer[i].classList.contains('question-hidden')){
+            answer[i].classList.remove('question-hidden');
+            // buttonsMoreInfo[i].classList.add('button-open-answer');
+        } else {
+            answer[i].classList.add('question-hidden');
+            // buttonsMoreInfo[i].classList.remove('button-open-answer');
+        }
+
+    })
+}
