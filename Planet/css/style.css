@@ -723,8 +723,8 @@ header {
 .page-header-technology {
     margin-bottom: 76px;
 }
-.page-main-technology {
-    height: 570px;
+.about-technology {
+    height: 580px;
 }
 .technology-title {
     font-size: 44px;
@@ -787,13 +787,13 @@ header {
     width: 480px;
     height: 480px;
     position: relative;
-    bottom: 425px;
-    left: 320px;
+    left: 318px;
+    bottom: 444px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 480px;
-    border: 1px solid rgba(189,183,183,0.34);
+    border: 1px solid rgba(189,183,183,0.34);    
 }
 .images-helmet {
     width: 408px;
@@ -807,7 +807,7 @@ header {
 .VR-helmet {
     position: absolute;
     left: 50px;
-    top: 130px;
+    top: 145px;
 }
 .glass {
     position: absolute;
@@ -820,28 +820,30 @@ header {
 }
 .pointer-1 {
     left: 211px;
+    top: 14px;
 }
 .pointer-2 {
-    left:577px
+    left:577px;
+    top: 12.5px;
 }
 .pointer-3 {
     display: flex;
     left: 167px;
-    top: 161.5px
+    top: 175.5px
 }
 .pointer-3-ellipse {
     position: relative;
-    bottom: 5px;
-    left: 407px;
+    bottom: 3.5px;
+    left: 403px;
 }
 
 .pointer-4 {
     left: 699px;
-    top: 166.5px;
+    top: 180.5px;
 }
 .pointers {
     position: relative;
-    bottom:858px;
+    bottom:874px;
     height: 390px;
     width: 1114px;
     margin-left: 28px;
