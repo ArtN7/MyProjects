@@ -13,7 +13,6 @@ body {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
-    align-items: center;
     background-image: url("../img/pink-planet.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,6 +41,10 @@ header {
 
 .page-header-product, .page-header-questions, .page-header-technology, .page-header-explanation {
     margin-bottom: 76px;
+}
+.page-main-explanation, .page-main-technology, .page-main-questions, .page-main-contacts {
+    margin-top: 0;
+    margin-left: 90px;
 }
 
 .page-header-nav {
@@ -605,7 +608,6 @@ header {
 .page-main-explanation {
     width: 1200px;
     height: 535px;
-    margin-top: 0;
 }
 .question-explanation {
     height: 51px;
@@ -844,9 +846,25 @@ header {
     margin-left: 28px;
 }
 
-/* .page-main-questions {
-   
-} */
+.body-questions {
+    min-height: 100vh;
+}
+
+.body-questions::after {
+    content: "";
+    background: url(../img/boy.png) no-repeat;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+    width: 235px;
+    min-height: 264px;
+    background-size: cover;
+    z-index: -1;
+}
+.page-main-questions {
+    z-index: 0;
+    width: 904px;
+}
 .title-for-questions {
     margin-top: 0;
     font-size: 44px;
@@ -865,7 +883,6 @@ header {
     padding: 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     gap:5px;
 }
 .main-question {
@@ -880,8 +897,6 @@ header {
     line-height: 132.135%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-
 }
 .main-question-answer {
     color: #1C1C1C;
@@ -890,29 +905,48 @@ header {
     font-weight: 300;
     line-height: 150%;
     width: 640px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+
 }
 .question-hidden {
     display: none;
+  transition: 1s ease max-height
 }
 .main-question-static-info {
     width: inherit;
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
+    display: flex;
+    align-items: center;
 }
-.button-open-answer {
-    transform: rotate(45deg);
+.main-question-static-info::before {
+    content: "";
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #0DD1A2;
+    margin-left: 20px;
+    margin-right: 10px;
 }
+
 .main-question-button-more-info {
     width: 72px;
     height: 72px;
-    background: #15B28D;
-    border: none;
+    background: #15B28D; 
+    border: none; 
+    margin-left: auto;
 }
-.main-question-button-plus {
+.main-question-button-more-info {
     color: #FFF;
     font-size: 48px;
     font-style: normal;
     font-weight: 300;
     line-height: 132.135%;
+
+}
+.main-question-button-plus-closed {
+    transition: 0.5s;
+}
+.main-question-button-plus-open {
+    transform: rotate(45deg) translate(1px, -3px);
+    transition: 0.5s;
 }

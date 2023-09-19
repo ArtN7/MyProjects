@@ -32,14 +32,16 @@ buttonOK.addEventListener('click', () => {
 const buttonsMoreInfo = document.querySelectorAll('.main-question-button-more-info');
 const answer = document.querySelectorAll('.main-question-answer');
 for (let i = 0; i < buttonsMoreInfo.length; i += 1) {
-    // const buttonPlus = buttonsMoreInfo[i].querySelector('.main-question-button-plus');
+    const buttonPlus = buttonsMoreInfo[i].querySelector('.main-question-button-plus-closed');
     buttonsMoreInfo[i].addEventListener('click', () => {
         if (answer[i].classList.contains('question-hidden')){
             answer[i].classList.remove('question-hidden');
-            // buttonsMoreInfo[i].classList.add('button-open-answer');
+            buttonPlus.classList.add('main-question-button-plus-open');
+            buttonPlus.classList.remove('main-question-button-plus-closed');
         } else {
             answer[i].classList.add('question-hidden');
-            // buttonsMoreInfo[i].classList.remove('button-open-answer');
+            buttonPlus.classList.remove('main-question-button-plus-open');
+            buttonPlus.classList.add('main-question-button-plus-closed');
         }
 
     })
