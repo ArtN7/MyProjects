@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: column;
+    align-items: center;
     background-image: url("../img/pink-planet.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,6 +46,11 @@ header {
 .page-main-explanation, .page-main-technology, .page-main-questions, .page-main-contacts {
     margin-top: 0;
     margin-left: 90px;
+    padding-left: 26px;
+    width: 100vh;
+}
+.page-main-technology {
+    width: 90%;
 }
 
 .page-header-nav {
@@ -229,12 +235,13 @@ header {
 .page-footer {
     width: 100%;
     max-width: 1366px;;
-    position: absolute;
+    position: fixed;
     justify-content: inherit;
     display: flex;
     flex-wrap: wrap;
     margin-top: 0;
     bottom: 20px;
+    z-index: 0;
 }
 
 
@@ -465,13 +472,12 @@ header {
 .page-main-product {
     width: 100%;
     max-width: 1366px;
-    max-height: 529px;
+    max-height: 520px;
 }
 
 .what-is-planet {
     display: flex;
     flex-direction: column;
-    width: 591px;
     margin-left: 90px;
 }
 
@@ -479,15 +485,18 @@ header {
     margin-top: 0;
     margin-bottom: 54px;
     width: 591px;
+    height: 51px;
     padding-bottom: 4px;
     border-bottom: 3px solid #0DD1A2;
-
+    display: flex;
+    align-items: center;
 }
-.main-question h1 {
+.main-question-product h2 {
     margin: 0;
-    font-weight: 500;
     font-size: 44px;
-    line-height: 54px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .info-product {
@@ -509,7 +518,7 @@ header {
     position: relative;
     width: 737px;
     height: 363px;
-    bottom: 179px;
+    bottom: 192px;
     left: 536px;
     text-align: end;
 }
@@ -606,7 +615,7 @@ header {
 }
 
 .page-main-explanation {
-    width: 1200px;
+    width: 1320px;
     height: 535px;
 }
 .question-explanation {
@@ -847,23 +856,18 @@ header {
 }
 
 .body-questions {
-    min-height: 100vh;
-}
+    background: 
+        url(../img/boy.png)right bottom no-repeat fixed,
+        url("../img/pink-planet.png") 50% 40% no-repeat fixed;
+    background-size: 
+        235px 264px,
+        cover;
 
-.body-questions::after {
-    content: "";
-    background: url(../img/boy.png) no-repeat;
-    position: absolute;
-    right: 30px;
-    bottom: 0;
-    width: 235px;
-    min-height: 264px;
-    background-size: cover;
-    z-index: -1;
 }
 .page-main-questions {
-    z-index: 0;
-    width: 904px;
+    width: 90%;
+    margin-bottom: 48px;
+    padding-bottom: 48px;
 }
 .title-for-questions {
     margin-top: 0;
@@ -884,7 +888,6 @@ header {
     display: flex;
     flex-direction: column;
     gap:5px;
-    margin-bottom: 48px;
 }
 .main-question {
     width: 904px;
