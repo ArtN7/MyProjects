@@ -1,6 +1,6 @@
 body {
     position: relative;
-    height: 100vh;
+    height: 100%;
     overflow: auto;
     margin: 0 auto;
     padding: 0;
@@ -884,6 +884,7 @@ header {
     display: flex;
     flex-direction: column;
     gap:5px;
+    margin-bottom: 48px;
 }
 .main-question {
     width: 904px;
