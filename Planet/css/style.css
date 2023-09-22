@@ -14,10 +14,9 @@ body {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
-    background-image: url("../img/pink-planet.png");
-    background-repeat: no-repeat;
+    background: url("../img/pink-planet.png") 50% 30% no-repeat content-box,
+        linear-gradient(108deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .body-page {
@@ -857,7 +856,8 @@ header {
 .body-questions {
     background: 
         url(../img/boy.png)right bottom no-repeat fixed,
-        url("../img/pink-planet.png") 50% 40% no-repeat fixed;
+        url("../img/pink-planet.png") 50% 30% no-repeat fixed,
+        linear-gradient(108deg, rgba(23, 26, 28, 0.72) 0%, #5E5E57 100%);;
     background-size: 
         235px 264px,
         cover;
@@ -1018,7 +1018,6 @@ header {
 
 .contacts-form {
     width: 570px;
-    border: 1px solid green;
 }
 .contacts-form-text {
     margin-bottom: 12px;
@@ -1039,25 +1038,26 @@ header {
 }
 .contacts-block-form {
     margin: 0 0 20px 0;
-    display: grid; 
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    grid-template: 
-        "name email" 46px
-        "interest interest" 144px
-        /280px 280px;
-    grid-auto-flow: column; 
-};
-.contacts-block-form-row1-col1 { 
-    grid-area: name; 
-} 
-.contacts-block-form-row1-col2 {
-     grid-area: email; 
-} 
-.contacts-block-form-row2 {
-     grid-area: interest; 
-} 
+}
 .contacts-block-form-name, .contacts-block-form-email, .contacts-block-form-interest {
-    width: 100%;
+    border: none;
+    padding: 15px 0 0 15px;
+    color: black;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 130%;
+}
+.contacts-block-form-name, .contacts-block-form-email {
+    width: 265px;
+    height: 31px;
+}
+.contacts-block-form-interest {
+    width: 555px;
+    height: 129px;
 }
 .contacts-form-button-send {
     width: 120px;
