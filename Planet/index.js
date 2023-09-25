@@ -11,7 +11,7 @@ for (const button of buttonOrder) {
         body.classList.add('popup-is-work');
 
     })
-}
+};
 for (const button of buttonsSubmit) {
     button.addEventListener('click', (evt) => {
         evt.preventDefault();
@@ -19,7 +19,7 @@ for (const button of buttonsSubmit) {
         popup.classList.add('popup-display-none');
         popupConfirmation.classList.remove('popup-confirmation-order');
     })
-}
+};
 
 for (const button of buttonClose) {
     button.addEventListener('click', () => {
@@ -27,11 +27,37 @@ for (const button of buttonClose) {
         body.classList.remove('popup-is-work');
         popupConfirmation.classList.add('popup-confirmation-order');
     })
-}
+};
 buttonOK.addEventListener('click', () => {
     popupConfirmation.classList.add('popup-confirmation-order');
     body.classList.remove('popup-is-work');
-})
+});
+
+let buttonVideo = '';
+let videoPopup = '';
+if (document.querySelector(".button-video") !== null) {
+    buttonVideo = document.querySelector('.button-video');
+    videoPopup = document.querySelector('.popup-video-index');
+    buttonVideo.addEventListener('click', () => {
+        body.classList.add('popup-is-work');
+        videoPopup.classList.remove('popup-video-none');
+    })
+}
+body.addEventListener('keydown', (e) => {
+	if( e.key === "Escape" ){ // код клавиши Escape, но можно использовать e.key
+        if (body.querySelector(".button-video") !== null) {
+            videoPopup.pause();
+            videoPopup.classList.add('popup-video-none');
+        }
+        if (popup.classList.contains('popup-display-none')) {
+            body.classList.remove('popup-is-work');
+            popupConfirmation.classList.add('popup-confirmation-order');
+        } else {
+            popup.classList.add('popup-display-none');
+            body.classList.remove('popup-is-work');
+        }
+	}
+});
 
 
 const buttonsMoreInfo = document.querySelectorAll('.main-question-button-more-info');

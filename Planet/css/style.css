@@ -226,7 +226,15 @@ header {
     background-color: #0DD1A2;
     border: #0DD1A2;
 }
-
+.popup-video-none {
+    display: none;
+}
+.popup-video-index {
+    position: absolute;
+    height: max-content;
+    top: 150px; /* настроить под нужное видео */
+    z-index: 1;
+}
 .page-footer {
     width: 100%;
     max-width: 1366px;
@@ -246,6 +254,7 @@ header {
     width: 76px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .facebook,
