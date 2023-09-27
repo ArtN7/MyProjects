@@ -59,6 +59,51 @@ body.addEventListener('keydown', (e) => {
 	}
 });
 
+if (body.querySelector(".gallary-main-img") !== null) {
+    const gallaryImages = body.getElementsByClassName('gallary-main-img');
+    const firstImageGallary = body.querySelector('.first-image-gallary');
+    const slideToLeft = body.querySelector('.slide-to-left');
+    const slideToRight = body.querySelector('.slide-to-right');
+    let id = 0;
+    const imagesLength = gallaryImages.length - 1;
+    firstImageGallary.textContent = '0' + gallaryImages[id].id;
+
+    slideToRight.addEventListener('click', () => {
+        id += 1;
+        if (id > imagesLength) {
+            gallaryImages[imagesLength].classList.add('gallery-img-none');
+            id = 0;
+            gallaryImages[id].classList.remove('gallery-img-none');
+            firstImageGallary.textContent = '0' + gallaryImages[id].id;
+            return;
+        } 
+        firstImageGallary.textContent = '0' + gallaryImages[id].id;
+        gallaryImages[id].setAttribute('src', gallaryImages[id].getAttribute('src'));
+        gallaryImages[id - 1].classList.add('gallery-img-none');
+        gallaryImages[id].classList.remove('gallery-img-none');
+
+    });
+
+    slideToLeft.addEventListener('click', () => {
+        id -= 1;
+        if (id < 0) {
+            gallaryImages[id + 1].classList.add('gallery-img-none');
+            id = imagesLength;
+            gallaryImages[id].classList.remove('gallery-img-none');
+            firstImageGallary.textContent = '0' + gallaryImages[id].id;
+            return;
+        } 
+        firstImageGallary.textContent = '0' + gallaryImages[id].id;
+        gallaryImages[id].setAttribute('src', gallaryImages[id].getAttribute('src'));
+        gallaryImages[id + 1].classList.add('gallery-img-none');
+        gallaryImages[id].classList.remove('gallery-img-none');
+    });
+}
+
+const glass = body.querySelector('.div-glass');
+glass.addEventListener('click', (e) => {
+    
+})
 
 const buttonsMoreInfo = document.querySelectorAll('.main-question-button-more-info');
 const answer = document.querySelectorAll('.main-question-answer');
